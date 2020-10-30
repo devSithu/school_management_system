@@ -31,6 +31,7 @@ Route::middleware(['auth:sanctum', 'verified'])->get('/dashboard', function () {
 
 Route::group([ 'prefix'=>'admin' , 'namespace'=>'Admin' ],function(){
     Route::get('dashboard','AdminController@dashboard')->name('adminDashboard');
+
 });
 
 Route::group([ 'prefix'=>'teacher' , 'namespace'=>'Teacher' ],function(){
@@ -39,4 +40,9 @@ Route::group([ 'prefix'=>'teacher' , 'namespace'=>'Teacher' ],function(){
 
 Route::group([ 'prefix'=>'student' , 'namespace'=>'Student' ],function(){
     Route::get('dashboard','StudentController@dashboard')->name('studentDashboard');
+    Route::get('lookTeacher','StudentController@lookTeacher')->name('studentLookTeacher');
+    Route::get('studentProfile','StudentController@studentProfile')->name('studentProfile');
+    Route::get('lookClass','StudentController@lookClass')->name('lookClass');
+    Route::get('lookRequestCourse','StudentController@lookRequestCourse')->name('lookRequestCourse');
+    Route::get('lookNews','StudentController@lookNews')->name('lookNews');
 });

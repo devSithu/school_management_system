@@ -26,6 +26,37 @@
         </div>
         </nav>
 
+        <div class="container mt-3">
+            <div class="card">
+                <div class="card-body">
+                <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                    <div class="collapse navbar-collapse" id="navbarNav">
+                        <ul class="navbar-nav">
+                        <li class="nav-item mr-5">
+                            <a class="nav-link" href="{{ route('studentProfile') }}">Profile</a>
+                        </li>
+                        <li class="nav-item mr-5">
+                            <a class="nav-link" href="{{ route('studentLookTeacher') }}">Teachers</a>
+                        </li>
+                        <li class="nav-item mr-5">
+                            <a class="nav-link" href="{{ route('studentDashboard') }}">Course</a>
+                        </li>
+                        <li class="nav-item mr-5">
+                            <a class="nav-link" href="{{ route('lookClass') }}">Class</a>
+                        </li>
+                        <li class="nav-item mr-5">
+                            <a class="nav-link" href="{{ route('lookRequestCourse') }}">Request Course</a>
+                        </li>
+                        <li class="nav-item mr-5">
+                            <a class="nav-link" href="{{ route('lookNews') }}">News</a>
+                        </li>
+                        </ul>
+                    </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+
     @yield('content')
 
     @livewireScripts

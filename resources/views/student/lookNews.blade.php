@@ -8,7 +8,7 @@
                 <!-- search start  -->
                 <form class="form-inline mb-3">
                     <div class="form-group mx-sm-3 mb-2">
-                        <input type="text" class="form-control" id="inputPassword2" placeholder="Search Course...">
+                        <input type="text" class="form-control" id="inputPassword2" placeholder="Search News..">
                     </div>
                     <button type="submit" class="btn btn-primary mb-2">Search</button>
                 </form>
