@@ -1,0 +1,13 @@
+<?php
+
+namespace App\Models;
+
+use Illuminate\Database\Eloquent\Factories\HasFactory;
+use Illuminate\Database\Eloquent\Model;
+
+class Classes extends Model
+{
+    use HasFactory;
+
+    protected $fillable = ['class_id','course_id','course_name','fee','start_time','end_time','start_date','end_date','class_type','monday','tuesday','wednesday','thursday','friday','saturday','sunday'];
+}
